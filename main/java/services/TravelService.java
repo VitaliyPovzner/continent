@@ -75,7 +75,6 @@ public class TravelService implements ITravel {
     private void changeState(Travel travel) {
         travel.setState(StateConstants.CLOSED);
         repository.save(travel);
-        System.out.println("DONE");
     }
 
     private boolean checkState(String state) {
