@@ -67,7 +67,7 @@ public class TravelService implements ITravel {
 
     private void useScheldueExecutor(Travel travel) {
         ScheduledFuture<?> scheduledFuture = executorService.schedule(()
-                -> changeState(travel), 1, TimeUnit.MINUTES);
+                -> changeState(travel), 24, TimeUnit.HOURS);
        // updateStateTasks.put(travel.getId(), scheduledFuture);
 
     }
